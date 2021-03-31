@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solution for Technigo Coding Challenge</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- YOUR CODE GOES HERE: -->
+  <div class="header">
+    <h1>My Solution</h1>
+    <p>A website created by me.</p>
+  </div>
+
+ <div class="navbar">
+   <!--link adresses-->
+    <a href="https://www.conceptatech.com/blog/difference-front-end-back-end-development">Backend 1</a>
+    <a href="https://techterms.com/definition/backend">Backend 2</a>
+    <a href="https://en.wikipedia.org/wiki/Front_end_and_back_end">Backend 3</a>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>About Backend</h2>
+      <!--creating round corners on my image-->
+      <img src="backend.jpg" class="rcorners">
+      <div>The Brain</div>
+      <h3>Backend short</h3>
+      <i style="font-size:1.5vw;">"The clearest distinction between
+      frontend and backend
+      is that frontend is what the
+      user sees and interacts with 
+      in their browser,
+      and backend is what never reaches
+      the user's computer
+      but stays on the server."</i>
+    </div>
+    
+    <div class="main">
+      <h2>What about Backend</h2>
+      <h5>Me trying to explain Backend</h5>
+      <small>Current Date and Time is <span id='date-time'></span>.</small>
+      <!--Script to get the days date and time -->
+      <script>
+        var dt = new Date();
+        document.getElementById('date-time').innerHTML=dt.toDateString();
+      </script>
+      <p>The simplest explanation of backend is what the user does not see or interact with in their browser, it stays on the server.
+        Backend is like the web page's brain, if you as a user enter an address in the browser, it is not in your own computer. It is found elsewhere on the web and is called a backend, it can consist of one or more servers that the browser contacts and asks to have a page sent to it.
+        It is therefore often called backend code server-side code. Most of the logic is usually on the backend side.
+        There are many languages ​​to choose from on the server side such as Java, Python and Javascript</p>
+    </div> 
+  </div>
+</body>
+</html>
